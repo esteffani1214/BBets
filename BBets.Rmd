@@ -96,5 +96,5 @@ Trying different numbers in the numClass section of the BrLw function allowed me
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
   
-We created a 95% confidence interval using the hist() function to make a histogram for the results. We also learned how to make the bets more fair to the students by changing the size of the class. We also learned how to apply defaults, which allowed us to run the BrLw function without having to type all the numeric variables within the parentheses. Afterward we could change any of the variables in the parentheses by writing something such as BrLw(odds=4). 
+We created a 95% confidence interval using the hist() function to make a histogram for the results. We also learned how to make the bets more fair to the students by changing the size of the class. The size of the class should be around 28-29 students. We also learned how to apply defaults, which allowed us to run the BrLw function without having to type all the numeric variables within the parentheses. Afterward we could change any of the variables in the parentheses by writing something such as BrLw(odds=4). 
   
