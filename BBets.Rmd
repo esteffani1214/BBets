@@ -76,13 +76,21 @@ hist(s.results)
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
-
-
-
-
-
-
-
+  
+```{r}
+results <- as.numeric(1:200)
+for(i in results){
+  results[i] <- BrLw(29, 2, 637)
+}
+t.test(results) 
+s.results = sort(results)
+hist(results)
+hist(s.results)
+```
+  
+Trying different numbers in the numClass section of the BrLw function allowed me to, through a process of trial and error, find the class size that would make the bet fair to the students. Decreasing the class size meant there was a smaller chance of two people sharing the same birthday. The 95% confidence interval is `r s.results[5]` to `r s.results[195]` .
+  
+  
 
 # Discussion and Conclusion
 
