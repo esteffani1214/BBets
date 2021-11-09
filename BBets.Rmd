@@ -56,7 +56,7 @@ hist(s.results)
 A 95% confidence interval of Brownlow's earnings is `r s.results[5]` to `r s.results[195]`.
   
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
-  
+   
 ```{r}
 results <- as.numeric(1:200)
 for(i in results){
@@ -67,7 +67,7 @@ s.results = sort(results)
 hist(results)
 hist(s.results)
 ```
-  
+   
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
 
@@ -87,12 +87,14 @@ s.results = sort(results)
 hist(results)
 hist(s.results)
 ```
-  
+   
 Trying different numbers in the numClass section of the BrLw function allowed me to, through a process of trial and error, find the class size that would make the bet fair to the students. Decreasing the class size meant there was a smaller chance of two people sharing the same birthday. The 95% confidence interval is `r s.results[5]` to `r s.results[195]` .
   
-  
+    
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
-
+  
+We created a 95% confidence interval using the hist() function to make a histogram for the results. We also learned how to make the bets more fair to the students by changing the size of the class. We also learned how to apply defaults, which allowed us to run the BrLw function without having to type all the numeric variables within the parentheses. Afterward we could change any of the variables in the parentheses by writing something such as BrLw(odds=4). 
+  
